@@ -25,6 +25,8 @@ public class RBLModel extends Keywords{
 		click(addModelUnit);
 		String dataLocation = Utils.getDataFromTestData("modelUnit", "Training Data Location");
 		String desName = Utils.getDataFromTestData("modelUnit", "Description");
+		String unitName = Utils.getDataFromTestData("modelUnit", "Decision Unit Name");
+		String dataLocationFile = Utils.getDataFromTestData("modelUnit", "Data Location File");
 		waitForElement(trainingDataLocation);
 		sendKeys(trainingDataLocation, dataLocation);
 		defaultWait();
@@ -107,7 +109,17 @@ public class RBLModel extends Keywords{
 		waitUntilInvisibilityElement(failedStatus);
 		getText(failedStatus);
 		}
-		
+		click(viewPredection);
+		waitForElement(createPredection);
+		click(createPredection);
+		waitForElement(inputFile);
+		sendKeys(inputFile, unitName);
+		waitForElement(addDataLocation);
+		sendKeys(addDataLocation, dataLocationFile);
+		waitForElement(computemetrics);
+		click(computemetrics);
+		waitForElement(saveScenario);
+		click(saveScenario);
 	}
 
 }
