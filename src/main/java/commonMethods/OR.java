@@ -102,8 +102,15 @@ public interface OR {
 	public static String failedStatus = "Reason for Failure>//div[@id='page-wrapper']/div[2]/div[2]/div[3]/div/div/div[2]/table/tbody/tr/td[4][text()='FAILED']/i";
 	public static String modelRunningStatus = "Reason for Failure>//div[@id='page-wrapper']/div[2]/div[2]/div[3]/div/div/div[2]/table/tbody/tr/td[4][text()='RUNNING']";
 	
+	//Scenario
+	public static String viewPredection = "View Predection>//div[@id='page-wrapper']/div[2]/div/div[2]/div";
+	public static String createPredection = "Create Predection>//a[contains(text(),'+ Create Prediction')]";
+	public static String addDataLocation = "Data Location>//div[@id='page-wrapper']/div[2]/div[2]/div/div/div/div[2]/form/div[5]/div/input";
+	public static String computemetrics = "Compute Error Metrics>//input[@type='checkbox']";
+	public static String saveScenario = "Save Scenario>//button[text()='Save']";
 	
-
+	
+	
 	// Pipeline
 	public static String viewPipeline = "View Pipeline>//a[contains(text(),'View Pipeline')]";
 	public static String runAutomation = "Run Automation>//div[@id='pipeline']/div/div/div/div/div[3]/div/button";
