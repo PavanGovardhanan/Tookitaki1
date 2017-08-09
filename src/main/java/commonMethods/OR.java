@@ -334,10 +334,10 @@ public interface OR {
 
 	// AML Pipeline
 	public static String createpipeline = "Create Pipeline >//button[1]";
-	public static String addPipelineName = "Add Automation Name >//input[@type='text']";
+	public static String addPipelineName = "Add Automation Name >//input[@placeholder='Automation Name']";
 	public static String addProcess = "Add Process >//div[@id='pipeline']/div/div/div[2]/div[2]/div/a/i";
 	public static String addTransformation = "Add Transformation >//a[contains(text(),'Add Transformation')]";
-	public static String addModel = "Add Model >//button[contains(text(),'Add Model')]";
+	public static String addModel = "Add Model >//a[contains(text(),'Add Model')]";
 	public static String addScenario = "Add Scenario >//a[contains(text(),'Add Scenario')]";
 	public static String chooseTransformation = "Choose a Transformation >//div[2]/div/div/div[2]/div/div[2]/div/a";
 	public static String selectTransformation = "Select Transformation >//div[@id='select2-drop']/div/input";
