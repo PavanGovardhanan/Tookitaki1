@@ -82,27 +82,23 @@ public class Testcases extends Keywords {
 	public static void amlModel() throws IOException {
 		AMLModel.amlModel();
 	}
-	//@Test(priority=6)
-	public static void rblTransformation() throws IOException {
-		RBLTransform.rblTransform();
-	}
-	@Test(priority=7)
+	@Test(priority=6)
 	public static void rblTransformationScenario() throws IOException {
 		RBLTransformation.rblTransformation();
 	}
-	@Test(priority=8)
+	@Test(priority=7)
 	public static void rblModel() throws IOException {
 		RBLModel.rblModel();
 	}
-	@Test(priority=9)
+	@Test(priority=8)
 	public static void amlPipeline() throws IOException {
 		AMLPipeline.amlPipeline();
 	}
-	@Test(priority=10)
+	@Test(priority=9)
 	public static void rblPipeline() throws IOException {
 		RBLPipeline.rblPipeline();
 	}
-	//@Test(priority=11)
+	//@Test(priority=10)
 	public static void upload() throws IOException {
 		Upload.upload();
 	}
