@@ -46,6 +46,8 @@ public class Testcases extends Keywords {
 	public static String environment;
 	public static String screenShot_value;
 	public static String testNGPath;
+	public static String reportsPath;
+	public static String testNGXML_Path;
 
 	@BeforeClass
 	public static void getDataFromConfig() throws MalformedURLException {
@@ -56,7 +58,8 @@ public class Testcases extends Keywords {
 		project_Name = Utils.getDataFromTestConfig("Project_Name");
 		version_Name = Utils.getDataFromTestConfig("Version_Name");
 		environment = Utils.getDataFromTestConfig("Environment");
-		screenShot_value = Utils.getDataFromTestConfig("Screenshot");
+		reportsPath = Utils.getDataFromTestConfig("Reports Path");
+		testNGXML_Path = Utils.getDataFromTestConfig("TestNGXML Path");
 		Config.getDriver();
 	}
 	@Test(priority=1)
@@ -79,7 +82,7 @@ public class Testcases extends Keywords {
 	public static void amlModel() throws IOException {
 		AMLModel.amlModel();
 	}
-	@Test(priority=6)
+	//@Test(priority=6)
 	public static void rblTransformation() throws IOException {
 		RBLTransform.rblTransform();
 	}
