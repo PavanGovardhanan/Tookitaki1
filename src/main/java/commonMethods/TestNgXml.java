@@ -180,16 +180,7 @@ public class TestNgXml {
 		         listeners.appendChild(listener);
 		         listener.setAttribute("class-name", a[i]);
 	         }
-	         /*Element listener = doc.createElement("listener");
-	         listeners.appendChild(listener);
-	         listener.setAttribute("class-name", "atu.testng.reports.listeners.ATUReportsListener");
-	         Element listener = doc.createElement("listener");
-	         listeners.appendChild(listener);
-	         listener.setAttribute("class-name", "atu.testng.reports.listeners.ConfigurationListener");
-	         Element listener = doc.createElement("listener");
-	         listeners.appendChild(listener3);
-	         listener.setAttribute("class-name", "atu.testng.reports.listeners.MethodListener");
-*/	         
+	        
 	         // write the content into xml file
 	         TransformerFactory transformerFactory =TransformerFactory.newInstance();
 	         Transformer transformer = transformerFactory.newTransformer();
