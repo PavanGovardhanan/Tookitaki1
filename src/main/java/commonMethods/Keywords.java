@@ -152,7 +152,7 @@ public class Keywords implements OR {
 			ATUReports.add("Get", url, false);
 		} catch (Exception e) {
 			ATUReports.add("Get", url, LogAs.FAILED, new CaptureScreen(CaptureScreen.ScreenshotOf.BROWSER_PAGE));
-			System.err.println(e.getMessage());
+			e.printStackTrace();
 			Assert.fail();
 
 		}
@@ -175,7 +175,7 @@ public class Keywords implements OR {
 		} catch (Exception e) {
 			ATUReports.add("Click - " + values[0], LogAs.FAILED,
 					new CaptureScreen(CaptureScreen.ScreenshotOf.BROWSER_PAGE));
-			System.err.println(e.getMessage());
+			e.printStackTrace();
 			Assert.fail();
 		}
 	}
@@ -190,7 +190,7 @@ public class Keywords implements OR {
 			ATUReports.add("Click - " + values[0], false);
 		} catch (Exception e) {
 			ATUReports.add(values[0], LogAs.FAILED, new CaptureScreen(CaptureScreen.ScreenshotOf.BROWSER_PAGE));
-			System.err.println(e.getMessage());
+			e.printStackTrace();
 			Assert.fail();
 		}
 	}
@@ -210,7 +210,7 @@ public class Keywords implements OR {
 			}
 		} catch (StaleElementReferenceException e) {
 			ATUReports.add(values[0], LogAs.FAILED, new CaptureScreen(CaptureScreen.ScreenshotOf.BROWSER_PAGE));
-			System.err.println(e.getMessage());
+			e.printStackTrace();
 			Assert.fail();
 		}
 	}
@@ -270,7 +270,7 @@ public class Keywords implements OR {
 		} catch (InterruptedException e) {
 			ATUReports.add("Clear and Type - " + values[0], keysToSend, LogAs.FAILED,
 					new CaptureScreen(CaptureScreen.ScreenshotOf.BROWSER_PAGE));
-			System.err.println(e.getMessage());
+			e.printStackTrace();
 			Assert.fail();
 		}
 		return keysToSend;
@@ -346,7 +346,7 @@ public class Keywords implements OR {
 		} catch (Exception e) {
 			ATUReports.add("Type - " + values[0], keysToSend, LogAs.FAILED,
 					new CaptureScreen(CaptureScreen.ScreenshotOf.BROWSER_PAGE));
-			System.err.println(e.getMessage());
+			e.printStackTrace();
 			Assert.fail();
 		}
 		return keysToSend;
@@ -548,7 +548,7 @@ public class Keywords implements OR {
 		} catch (InterruptedException e) {
 			ATUReports.add("Wait for element", inputData, LogAs.FAILED,
 					new CaptureScreen(CaptureScreen.ScreenshotOf.BROWSER_PAGE));
-			System.err.println(e.getMessage());
+			e.printStackTrace();
 			Assert.fail();
 		}
 	}
@@ -596,7 +596,7 @@ public class Keywords implements OR {
 		} catch (NoSuchElementException e) {
 			ATUReports.add("Not Present", values[0], LogAs.FAILED,
 					new CaptureScreen(CaptureScreen.ScreenshotOf.BROWSER_PAGE));
-			System.err.println(e.getMessage());
+			e.printStackTrace();
 			Assert.fail();
 			return false;
 		}
@@ -635,7 +635,7 @@ public class Keywords implements OR {
 		   wait.until(ExpectedConditions.visibilityOf(webElement));
 		   ATUReports.add("wait visibility Element " + values[0], false);
 		  } catch (Exception e) {
-			  System.err.println(e.getMessage());
+			  e.printStackTrace();
 			  Assert.fail();
 		  }
 	}
@@ -651,7 +651,7 @@ public class Keywords implements OR {
 		} catch (Exception e) {
 			ATUReports.add("Wait - " + values[0], LogAs.FAILED,
 					new CaptureScreen(CaptureScreen.ScreenshotOf.BROWSER_PAGE));
-			System.err.println(e.getMessage());
+			e.printStackTrace();
 			Assert.fail();
 		}
 		  } 
@@ -720,7 +720,7 @@ public class Keywords implements OR {
 		} catch (Exception e) {
 			ATUReports.add("Wait - " + values[0], LogAs.FAILED,
 					new CaptureScreen(CaptureScreen.ScreenshotOf.BROWSER_PAGE));
-			System.err.println(e.getMessage());
+			e.printStackTrace();
 			Assert.fail();
 		}
 	}
@@ -909,7 +909,7 @@ public class Keywords implements OR {
 		catch(Exception e)
 		{
 			ATUReports.add("Tab pressed", LogAs.FAILED, new CaptureScreen(CaptureScreen.ScreenshotOf.BROWSER_PAGE));
-			System.err.println(e.getMessage());
+			e.printStackTrace();
 			Assert.fail();
 		}
 	}
@@ -1277,7 +1277,7 @@ public class Keywords implements OR {
 			return text;
 
 		} catch (Exception e) {
-			System.err.println(e.getMessage());
+			e.printStackTrace();
 			return null;
 		}
 	}
