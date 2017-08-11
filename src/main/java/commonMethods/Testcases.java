@@ -66,19 +66,19 @@ public class Testcases extends Keywords {
 	public static void login() throws IOException {
 		Login.login();
 	}
-	//@Test(priority=2)
+	@Test(priority=2)
 	public static void cluster() throws Exception {
 		Cluster.cluster();
 	}
-	//@Test(priority=3)
+	@Test(priority=3)
 	public static void explore() throws IOException {
 		Explore.explore();
 	}
-	//@Test(priority=4)
+	@Test(priority=4)
 	public static void amlTransformation() throws IOException {
 		AMLTransform.amlTransform();
 	}
-	//@Test(priority=5)
+	@Test(priority=5)
 	public static void amlModel() throws IOException {
 		AMLModel.amlModel();
 	}
@@ -86,19 +86,19 @@ public class Testcases extends Keywords {
 	public static void rblTransformation() throws IOException {
 		RBLTransform.rblTransform();
 	}
-	//@Test(priority=7)
+	@Test(priority=7)
 	public static void rblTransformationScenario() throws IOException {
 		RBLTransformation.rblTransformation();
 	}
-	//@Test(priority=8)
+	@Test(priority=8)
 	public static void rblModel() throws IOException {
 		RBLModel.rblModel();
 	}
-	//@Test(priority=9)
+	@Test(priority=9)
 	public static void amlPipeline() throws IOException {
 		AMLPipeline.amlPipeline();
 	}
-	//@Test(priority=10)
+	@Test(priority=10)
 	public static void rblPipeline() throws IOException {
 		RBLPipeline.rblPipeline();
 	}
