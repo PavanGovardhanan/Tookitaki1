@@ -49,20 +49,20 @@ public interface OR {
 	
 	
 	// Model
-	public static String addModelUnit = "Add Model Unit >//div[@id='page-wrapper']/div[3]/div/div/div/div[2]";
-	public static String trainingDataLocation = "Training Data Location>//div[@id='page-wrapper']/div[2]/div[2]/div[2]/div/div[2]/div/form/span/div/div/input";
-	public static String decisionUnitName = "Decision Unit Name >//div[@id='page-wrapper']/div[2]/div[2]/div[2]/div/div[2]/div/form/span/span/div/div/input";
+	public static String addModelUnit = "Add Model Unit >//div[@id='page-wrapper']/div[4]/div/div/div/div[2]";
+	public static String trainingDataLocation = "Training Data Location>//div[@id='page-wrapper']/div[4]/div[2]/div[2]/div/div[2]/div/form/span/div/div/input";
+	public static String decisionUnitName = "Decision Unit Name >//div[@id='page-wrapper']/div[4]/div[2]/div[2]/div/div[2]/div/form/span/span/div/div/input";
 	public static String decisionUnitName1 = "Decision Unit Name >//label[text()='Decision Unit Name']//following::input[@ng-model='vm.obj.name']";
-	public static String description = "Description >//div[@id='page-wrapper']/div[2]/div[2]/div[2]/div/div[2]/div/form/span/span/div[3]/div/input";
-	public static String infoNextStep = "Next Step >//div[@id='page-wrapper']/div[2]/div[2]/div[2]/div/div[2]/div/form/span[2]/button";
-	public static String dependentVariable = "Dependent Variable >//div[@id='page-wrapper']/div[2]/div[2]/div[2]/div/div[2]/div/form/span/div/div/select";
+	public static String description = "Description >//div[@id='page-wrapper']/div[4]/div[2]/div[2]/div/div[2]/div/form/span/span/div[3]/div/input";
+	public static String infoNextStep = "Next Step >//div[@id='page-wrapper']/div[4]/div[2]/div[2]/div/div[2]/div/form/span[2]/button";
+	public static String dependentVariable = "Dependent Variable >//div[@id='page-wrapper']/div[4]/div[2]/div[2]/div/div[2]/div/form/span/div/div/select";
 	public static String selectDependentVariable = "Select Dependent Variable >//option[@value='53']";
 	public static String selectDependentVariable1 = "Select Dependent Variable >//option[@value='10']";
-	public static String modelNextStep = "Next Step >//div[@id='page-wrapper']/div[2]/div[2]/div[2]/div/div[2]/div/form/span[2]/button[2]";
-	public static String analyzerType = "Analyzer Type >//div[@id='page-wrapper']/div[2]/div[2]/div[2]/div/div[2]/div/form/span/div/div/select";
+	public static String modelNextStep = "Next Step >//div[@id='page-wrapper']/div[4]/div[2]/div[2]/div/div[2]/div/form/span[2]/button[2]";
+	public static String analyzerType = "Analyzer Type >//div[@id='page-wrapper']/div[4]/div[2]/div[2]/div/div[2]/div/form/span/div/div/select";
 	public static String modelClassification = "Classification-XGBoost >//option[@value='number:5']";
-	public static String optimizationNextStep = "Next Step >//div[@id='page-wrapper']/div[2]/div[2]/div[2]/div/div[2]/div/form/span[2]/button[2]";
-	public static String runModel = "Run Model>//div[@id='page-wrapper']/div[2]/div[2]/div[2]/div/div[2]/div/form/span[2]/button[2]";
+	public static String optimizationNextStep = "Next Step >//div[@id='page-wrapper']/div[4]/div[2]/div[2]/div/div[2]/div/form/span[2]/button[2]";
+	public static String runModel = "Run Model>//div[@id='page-wrapper']/div[4]/div[2]/div[2]/div/div[2]/div/form/span[2]/button[2]";
 	public static String modelError = "Error Messaage >//div[@id='toast-container']/div/div[3]/div";
 	public static String featureSummary0 = "Feature Summary0 >//tr[59]/td/input";
 	public static String featureSummary2 = "Feature Summary2>//tr[63]/td/input";
