@@ -4,7 +4,7 @@ public interface OR {
 
 	
 	//Login
-	public static String username = "username >//input[@id='ttaipuser']";
+	public static String username = "username >//input[@id='tpuser']";
 	public static String password = "Password >//input[@id='ttaippass']";
 	public static String userLogin = "userLogin >//button[text()='Login']";
 	public static String getmessage = "Get message >//p[text()='Either user does not exist or password is wrong!']";
