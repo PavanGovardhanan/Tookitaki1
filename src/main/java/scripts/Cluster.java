@@ -49,14 +49,16 @@ public class Cluster extends Keywords {
 		waitForElement(trainingDataLocation);
 		sendKeys(trainingDataLocation, dataLocation);
 		defaultWait();
-		enter();
+		tab();
 		waitForElement(decisionUnitName);
 		sendKeys(decisionUnitName, unitName+1);
 		waitForElement(description);
 		sendKeys(description, desName+1);
+		waitForElement(infoNextStep);
 		click(infoNextStep);
 		waitForElement(dependentVariable);
 		click(dependentVariable);
+		waitForElement(selectDependentVariable);
 		click(selectDependentVariable);
 		click(modelNextStep);
 		waitForElement(analyzerType);

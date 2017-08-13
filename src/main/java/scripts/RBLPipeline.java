@@ -44,7 +44,7 @@ public class RBLPipeline extends Keywords {
 		click(chooseTransformation);
 		waitForElement(selectTransformation);
 		sendKeys(selectTransformation, file1);
-		wait("3");
+		defaultWait();
 		tab();
 		click(add);
 		defaultWait();

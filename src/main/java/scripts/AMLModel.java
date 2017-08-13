@@ -55,6 +55,7 @@ public class AMLModel extends Keywords {
 		//sendKeys(categoryThreshold, threshold);
 		waitForElement(runModel);
 		click(runModel);
+		defaultWait();
 		waitForElement(settings);
 		click(settings);
 		defaultWait();
@@ -67,6 +68,7 @@ public class AMLModel extends Keywords {
 		click(viewModel);
 		defaultWait();
 		refreshPage();
+		try {
 		waitUntilInvisibilityElement(viewAMLModel1);
 		getText(viewAMLModel1);
 		waitForElement(viewAMLModel);
@@ -77,7 +79,10 @@ public class AMLModel extends Keywords {
 		click(decisionTree);
 		waitForElement(decisionTreeDownload);
 		click(decisionTreeDownload);
+		}catch(Exception e){
+			getText(viewAMLModel1);
 			
+		}
 	}
 
 

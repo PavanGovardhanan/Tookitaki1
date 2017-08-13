@@ -2,6 +2,8 @@ package scripts;
 
 import java.io.IOException;
 
+import org.testng.Assert;
+
 import atu.testng.reports.ATUReports;
 import commonMethods.Config;
 import commonMethods.Keywords;
@@ -96,18 +98,19 @@ public class RBLModel extends Keywords{
 		click(model);
 		waitForElement(viewModel);
 		click(viewModel);
+		waitUntilInvisibilityElement(viewRBLModel1);
 		try {
-		waitUntilInvisibilityElement(viewRBLModel);
+		mouseOver(Config.driver, viewRBLModel1);
+		getText1(viewRBLModel1);
+		Assert.fail();
+		}catch(Exception e){
 		click(viewRBLModel);
 		click(featureRelevance);
 		click(decisionRules);
 		waitForElement(decisionTree);
 		click(decisionTree);
 		waitForElement(decisionTreeDownload);
-		click(decisionTreeDownload);
-		}catch(Exception e) {
-		waitUntilInvisibilityElement(failedStatus);
-		getText(failedStatus);
+		click(decisionTreeDownload);	
 		}
 		click(viewPredection);
 		waitForElement(createPredection);
@@ -119,7 +122,7 @@ public class RBLModel extends Keywords{
 		waitForElement(computemetrics);
 		click(computemetrics);
 		waitForElement(saveScenario);
-		click(saveScenario);
+		click(saveScenario);		
 	}
 
 }
