@@ -176,7 +176,7 @@ public class Keywords implements OR {
 			ATUReports.add("Click - " + values[0], LogAs.FAILED,
 					new CaptureScreen(CaptureScreen.ScreenshotOf.BROWSER_PAGE));
 			e.printStackTrace();
-			Assert.fail();
+			
 		}
 	}
 
@@ -652,7 +652,6 @@ public class Keywords implements OR {
 			ATUReports.add("Wait - " + values[0], LogAs.FAILED,
 					new CaptureScreen(CaptureScreen.ScreenshotOf.BROWSER_PAGE));
 			e.printStackTrace();
-			Assert.fail();
 		}
 		  } 
 	
@@ -1273,6 +1272,21 @@ public class Keywords implements OR {
 			WebElement webElement = Config.driver.findElement(By.xpath(values[1]));
 			highLightElement(path);
 			String text = webElement.getText().trim();
+			ATUReports.add(values[0], "", text, true);
+			return text;
+
+		} catch (Exception e) {
+			e.printStackTrace();
+			return null;
+		}
+	}
+	public static String getText1(String path) {
+		String[] values = splitXpath(path);
+		try {
+			WebElement webElement = Config.driver.findElement(By.xpath(values[1]));
+			highLightElement(path);
+			String text = webElement.getText().trim();
+			System.out.println(text);
 			ATUReports.add(values[0], "", text, true);
 			return text;
 
