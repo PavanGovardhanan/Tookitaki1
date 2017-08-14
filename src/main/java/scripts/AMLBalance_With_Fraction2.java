@@ -1,8 +1,6 @@
 package scripts;
 import java.io.IOException;
-import org.openqa.selenium.By;
-import atu.testng.reports.ATUReports;
-import commonMethods.Config;
+
 import commonMethods.Keywords;
 import commonMethods.Utils;
 public class AMLBalance_With_Fraction2 extends Keywords {

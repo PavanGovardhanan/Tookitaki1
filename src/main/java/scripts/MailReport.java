@@ -23,7 +23,7 @@ import javax.mail.internet.MimeBodyPart;
 import javax.mail.internet.MimeMessage;
 import javax.mail.internet.MimeMultipart;
 
-import atu.testng.reports.ATUReports;
+
 import commonMethods.Config;
 import commonMethods.Keywords;
 import commonMethods.Testcases;

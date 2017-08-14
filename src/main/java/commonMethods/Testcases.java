@@ -3,13 +3,37 @@ package commonMethods;
 
 import java.io.IOException;
 import java.net.MalformedURLException;
+
+import org.testng.ITestContext;
+import org.testng.ITestListener;
+import org.testng.ITestResult;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
-import atu.testng.reports.listeners.ATUReportsListener;
-import atu.testng.reports.listeners.ConfigurationListener;
-import atu.testng.reports.listeners.MethodListener;
+import scripts.AMLBalance_With_Fraction1;
+import scripts.AMLBalance_With_Fraction2;
+import scripts.AMLBalance_With_Fraction3;
+import scripts.AMLBalance_With_Fraction4;
+import scripts.AMLFilterPredection1;
+import scripts.AMLFilterPredection2;
+import scripts.AMLFilterPredection3;
+import scripts.AMLFilterPredection4;
+import scripts.AMLFilterPredection5;
+import scripts.AMLModel;
+import scripts.AMLN_Union1;
+import scripts.AMLN_Union2;
+import scripts.AMLN_Union3;
+import scripts.AMLPipeline;
+import scripts.AMLTransformEncode;
+import scripts.AMLTransformJoin;
+import scripts.AMLTransformationProject;
+import scripts.Cluster;
+import scripts.Explore;
+import scripts.Login;
+import scripts.MailReport;
+import scripts.RBLModel;
+import scripts.RBLPipeline;
 import scripts.RBLTransform;
 import scripts.RBLTransformAggregate;
 import scripts.RBLTransformAggregate2;
@@ -21,37 +45,14 @@ import scripts.RBLTransformTranspose;
 import scripts.RBLTransformationProject;
 import scripts.Upload;
 import scripts.ZipUtils;
-import scripts.Explore;
-import scripts.Cluster;
-import scripts.Login;
-import scripts.MailReport;
-import scripts.AMLModel;
-import scripts.AMLN_Union1;
-import scripts.AMLN_Union2;
-import scripts.AMLN_Union3;
-import scripts.AMLPipeline;
-import scripts.AMLBalance_With_Fraction1;
-import scripts.AMLBalance_With_Fraction2;
-import scripts.AMLBalance_With_Fraction3;
-import scripts.AMLBalance_With_Fraction4;
-import scripts.AMLFilterPredection1;
-import scripts.AMLFilterPredection2;
-import scripts.AMLFilterPredection3;
-import scripts.AMLFilterPredection4;
-import scripts.AMLFilterPredection5;
-import scripts.AMLTransformEncode;
-import scripts.AMLTransformJoin;
-import scripts.AMLTransformationProject;
-import scripts.RBLModel;
-import scripts.RBLPipeline;
 
-@Listeners({ ATUReportsListener.class, ConfigurationListener.class, MethodListener.class })
+//@Listeners({ ATUReportsListener.class, ConfigurationListener.class, MethodListener.class })
 
-public class Testcases extends Keywords {
-	public static String propertyFilePath=Utils.getDataFromTestConfig("ATUPropertiesPath").trim();
+public class Testcases extends Keywords{
+	/*public static String propertyFilePath=Utils.getDataFromTestConfig("ATUPropertiesPath").trim();
 	{
 		System.setProperty("atu.reporter.config", propertyFilePath);
-	}
+	}*/
 	public static String appURL;
 	public static String UserloginUserName;
 	public static String UserloginPassword;
@@ -81,7 +82,7 @@ public class Testcases extends Keywords {
 	public static void login() throws IOException {
 		Login.login();
 	}
-	/*//@Test(priority=2)
+	//@Test(priority=2)
 	public static void cluster() throws Exception {
 		Cluster.cluster();
 	}
@@ -89,7 +90,7 @@ public class Testcases extends Keywords {
 	public static void explore() throws IOException {
 		Explore.explore();
 	}
-	@Test(priority=4)
+	/*@Test(priority=4)
 	public static void amlTransformEncode() throws IOException {
 		AMLTransformEncode.amlTransformEncode();
 	}
@@ -205,18 +206,19 @@ public class Testcases extends Keywords {
 	public static void upload() throws IOException {
 		Upload.upload();
 	}
-	@Test(priority=33)
+	//@Test(priority=33)
 	public static void zipUtils() throws IOException {
 		ZipUtils.zipUtils();
 	}
-	@Test(priority=34)
+	//@Test(priority=34)
 	public static void mailReport() throws IOException {
 		MailReport.mailReport();
-	}*/
-	
+	}
+*/	
 	@AfterClass
 	public static void teardown() throws Exception {
 		Config.tearDown();
 	}
+	
 
 }

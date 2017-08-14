@@ -1,7 +1,6 @@
 package scripts;
 import java.io.IOException;
 import org.openqa.selenium.By;
-import atu.testng.reports.ATUReports;
 import commonMethods.Config;
 import commonMethods.Keywords;
 import commonMethods.Utils;
