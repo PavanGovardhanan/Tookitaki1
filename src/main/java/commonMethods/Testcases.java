@@ -81,7 +81,7 @@ public class Testcases extends Keywords {
 	public static void login() throws IOException {
 		Login.login();
 	}
-	@Test(priority=2)
+	//@Test(priority=2)
 	public static void cluster() throws Exception {
 		Cluster.cluster();
 	}
