@@ -81,7 +81,7 @@ public class Testcases extends Keywords {
 	public static void login() throws IOException {
 		Login.login();
 	}
-	@Test(priority=2)
+	/*//@Test(priority=2)
 	public static void cluster() throws Exception {
 		Cluster.cluster();
 	}
@@ -157,47 +157,47 @@ public class Testcases extends Keywords {
 	public static void rblTransform() throws IOException {
 		RBLTransform.rblTransform();
 	}
-	//@Test(priority=21)
+	@Test(priority=21)
 	public static void rblTransformationProject() throws IOException {
 		RBLTransformationProject.rblTransformationProject();
 	}
-	//@Test(priority=22)
+	@Test(priority=22)
 	public static void rblTransformAggregate() throws IOException {
 		RBLTransformAggregate.rblTransformAggregate();
 	}
-	//@Test(priority=23)
+	@Test(priority=23)
 	public static void rblTransformSlide() throws IOException {
 		RBLTransformSlide.rblTransformSlide();
 	}
-	//@Test(priority=24)
+	@Test(priority=24)
 	public static void rblTransformAggregate2() throws IOException {
 		RBLTransformAggregate2.rblTransformAggregate2();
 	}
-	//@Test(priority=25)
+	@Test(priority=25)
 	public static void rblTransformationTranspose() throws IOException {
 		RBLTransformTranspose.rblTransformTranspose();
 	}
-	//@Test(priority=26)
+	@Test(priority=26)
 	public static void rblTransformJoin() throws IOException {
 		RBLTransformJoin.rblTransformJoin();
 	}
-	//@Test(priority=27)
+	@Test(priority=27)
 	public static void rblTransformJoin2() throws IOException {
 		RBLTransformJoin2.rblTransformJoin2();
 	}
-	//@Test(priority=28)
+	@Test(priority=28)
 	public static void rblTransformSplit() throws IOException {
 		RBLTransformSplit.rblTransformSplit();
 	}
-	//@Test(priority=29)
+	@Test(priority=29)
 	public static void rblModel() throws IOException {
 		RBLModel.rblModel();
 	}
-	//@Test(priority=30)
+	@Test(priority=30)
 	public static void amlPipeline() throws IOException {
 		AMLPipeline.amlPipeline();
 	}
-	//@Test(priority=31)
+	@Test(priority=31)
 	public static void rblPipeline() throws IOException {
 		RBLPipeline.rblPipeline();
 	}
@@ -212,7 +212,7 @@ public class Testcases extends Keywords {
 	@Test(priority=34)
 	public static void mailReport() throws IOException {
 		MailReport.mailReport();
-	}
+	}*/
 	
 	@AfterClass
 	public static void teardown() throws Exception {
