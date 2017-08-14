@@ -1,6 +1,8 @@
 package scripts;
 import java.io.IOException;
 
+import org.testng.Reporter;
+
 import atu.testng.reports.ATUReports;
 import commonMethods.Keywords;
 import commonMethods.Testcases;
@@ -22,6 +24,7 @@ public class Login extends Keywords {
 		String invalidPassword = Utils.getDataFromTestData("userLogin", "Password");
 		waitForElement(username);
 		clearAndType(username,invalidUsername);
+		Reporter.log(username);
 		waitForElement(password);
 		clearAndType(password,invalidPassword);
 		click(userLogin);
